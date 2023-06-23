@@ -1,0 +1,52 @@
+@import "assets/css/constants.scss";
+
+%accountInfo {
+	.accountInfo,
+	.currentStatus {
+		padding: 15px 0px;
+		margin: 0 30px;
+
+		div {
+			padding: 5px 0;
+		}
+
+		span {
+			color: $orange;
+			margin-left: 5px;
+		}
+
+		svg {
+			margin: 0 10px;
+		}
+	}
+
+	.accountInfo {
+		box-sizing: border-box;
+		border-top: 1px solid $grey700;
+		border-bottom: 1px solid $grey700;
+		flex-direction: column;
+
+		& > div {
+			align-items: center;
+			flex-direction: row;
+		}
+	}
+
+	.currentStatus > div {
+		align-items: center;
+		flex-direction: row;
+
+		span {
+			color: $green;
+		}
+	}
+
+	.accountsButtons {
+		padding: 45px 30px;
+		flex-direction: row;
+
+		& > div {
+			margin-right: 25px;
+		}
+	}
+}

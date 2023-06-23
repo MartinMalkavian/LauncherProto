@@ -1,0 +1,27 @@
+@import "assets/css/commonIcon.scss";
+
+.connectionIcon {
+	width: 43px;
+	height: 35px;
+	animation: connection 2s linear infinite;
+}
+
+@keyframes connection {
+	0% {
+		background: url("images/connection.png") no-repeat center;
+		background-size: 43px;
+
+		transition: background 0.75s linear;
+	}
+
+	50% {
+		background: url("images/connection2.png") no-repeat center;
+		transition: background 0.5s linear;
+		background-size: 43px;
+	}
+
+	100% {
+		background: url("images/connection.png") no-repeat center;
+		background-size: 43px;
+	}
+}

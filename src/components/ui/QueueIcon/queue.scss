@@ -1,0 +1,89 @@
+@import "assets/css/commonIcon.scss";
+
+.loginQueueIcon {
+	width: 19px;
+	height: 28px;
+	position: absolute;
+
+	animation: userMove2 2s linear infinite;
+}
+
+.loginQueueIcon2 {
+	width: 19px;
+	height: 28px;
+	position: absolute;
+
+	animation: userMove 2s linear infinite;
+}
+
+.clock {
+	width: 19px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: url("images/clock.png");
+}
+
+@keyframes userMove {
+	0% {
+		opacity: 0;
+		transform: translate(-70%, -5%);
+		background: url("images/user.png");
+	}
+	10% {
+		opacity: 1;
+		transform: translate(-70%, -5%);
+		background: url("images/user.png");
+	}
+	11% {
+		opacity: 1;
+		transform: translate(-70%, -5%);
+		background: url("images/user.png");
+	}
+
+	50% {
+		opacity: 1;
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+
+	100% {
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+}
+
+@keyframes userMove2 {
+	0% {
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+
+	11% {
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+
+	50% {
+		transform: translate(-10%, 55%);
+		background: url("images/user.png");
+	}
+	51% {
+		opacity: 0;
+		background: none;
+	}
+
+	52% {
+		opacity: 1;
+		transform: translate(-40%, 25%);
+	}
+	90% {
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+	100% {
+		transform: translate(-40%, 25%);
+		background: url("images/user.png");
+	}
+}

@@ -1,0 +1,32 @@
+@import "assets/css/constants.scss";
+@import "./infoTitle.scss";
+@import "./characters.scss";
+@import "./accountInfo.scss";
+
+.aboutDummy {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+.dummy_ru {
+	background: url("../images/about_dummy_ru.png") center no-repeat;
+}
+.dummy_en {
+	background: url("../images/about_dummy_en.png") center no-repeat;
+}
+
+.accountDetailsError {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.accountDetails {
+	height: 100%;
+	background-color: $grey900;
+
+	@extend %accountInfoTitle;
+	@extend %characters;
+	@extend %accountInfo;
+}

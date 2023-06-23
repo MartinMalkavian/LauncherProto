@@ -1,0 +1,40 @@
+.iconBlock {
+	width: 86px;
+	height: 86px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.ellipse {
+		width: 86px;
+		height: 86px;
+		background: url("../img_res/ellipse.png") no-repeat;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		animation: ellipseSpin 2s linear infinite;
+	}
+
+	.iconCircle {
+		width: 70px;
+		height: 70px;
+		border: 1px solid white;
+		border-radius: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+@keyframes ellipseSpin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}

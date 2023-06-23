@@ -1,0 +1,36 @@
+@import "assets/css/constants.scss";
+
+%characters {
+	.characterTable {
+		height: 38px;
+		flex-direction: row;
+		align-items: center;
+		padding: 0 30px;
+
+		&.header {
+			background-color: $grey700;
+		}
+
+		div {
+			width: 30%;
+			text-align: center;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				width: 20%;
+			}
+		}
+	}
+
+	.characterList {
+		padding: 15px 0;
+		min-height: 144px;
+		flex-direction: column;
+	}
+
+	.charactersEmpty {
+		height: 100px;
+		justify-content: center;
+		align-items: center;
+	}
+}

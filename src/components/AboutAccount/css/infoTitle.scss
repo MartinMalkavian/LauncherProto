@@ -1,0 +1,74 @@
+@import "assets/css/constants.scss";
+@import "assets/css/templates.scss";
+
+%accountInfoTitle {
+	.accountInfoTitle {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 37px;
+		color: $grey100;
+
+		.ChangeTitleBlock {
+			position: absolute;
+			top: 37px;
+			left: 265px;
+
+			width: 310px;
+			box-sizing: border-box;
+			padding: 30px;
+			border: 1px solid $grey600;
+			background-color: $grey900;
+			color: $grey600;
+			z-index: 100;
+
+			.inputBlock {
+				flex-direction: row;
+
+				border-bottom: 1px solid $grey600;
+				justify-content: space-between;
+				align-items: center;
+
+				@extend %tpl-inputLabel;
+
+				&.focused {
+					color: $orange;
+					border-bottom: 1px solid $orange;
+				}
+
+				& > input {
+					width: 100%;
+					height: 35px;
+					color: $grey100;
+					background-color: transparent;
+					outline: none;
+					border: none;
+				}
+			}
+
+			.errorBlock {
+				min-height: 50px;
+				color: #bf3030;
+			}
+
+			.button {
+				justify-content: center;
+			}
+
+			&.focused {
+				color: $orange;
+			}
+		}
+
+		span {
+			color: $orange;
+			cursor: pointer;
+			margin-left: 10px;
+
+			& > svg {
+				margin-left: 10px;
+				color: $grey100;
+			}
+		}
+	}
+}

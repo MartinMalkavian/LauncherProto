@@ -1,0 +1,71 @@
+@import "assets/css/constants.scss";
+
+.RatingBlock {
+	height: 100%;
+	flex-direction: column;
+	overflow-y: auto;
+	padding-right: 15px;
+
+	.RatingTabsBlock {
+		height: 40px;
+		flex-direction: row;
+
+		.ratingTab {
+			width: 33%;
+			height: inherit;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			&.active {
+				background-color: $grey700;
+			}
+
+			&:nth-child(2) {
+				width: 34%;
+			}
+		}
+	}
+
+	.RatingTableBlock {
+		align-items: center;
+
+		& > div {
+			width: 100%;
+			height: 40px;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+
+			& > div {
+				width: 30%;
+				height: 40px;
+				justify-content: center;
+				align-items: center;
+
+				&:first-child,
+				&:nth-child(3) {
+					width: 10%;
+				}
+
+				&:nth-child(4) {
+					width: 12%;
+				}
+
+				&:nth-child(5) {
+					width: 15%;
+				}
+
+				&:last-child {
+					width: 23%;
+				}
+			}
+		}
+
+		.ratingHeader {
+			& > div {
+				background-color: $grey700;
+			}
+		}
+	}
+}

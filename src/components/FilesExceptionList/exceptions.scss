@@ -1,0 +1,56 @@
+@import "assets/css/constants.scss";
+
+.ExceptionListBlock {
+	height: 100%;
+	padding: 0px 25px;
+	background-color: $grey900;
+
+	.title,
+	.buttons {
+		height: 60px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.buttons {
+		flex-direction: row;
+
+		.add,
+		.save {
+			margin: 13px;
+		}
+	}
+
+	.files {
+		height: 420px;
+		padding: 5px 5px;
+		margin-bottom: 14px;
+		overflow-y: auto;
+		border-top: 1px solid $grey600;
+		border-bottom: 1px solid $grey600;
+
+		&::-webkit-scrollbar {
+			width: 2px;
+		}
+
+		.file {
+			padding: 2px 0;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			color: $grey600;
+
+			&:hover {
+				background-color: $grey800;
+			}
+
+			&:last-child {
+				cursor: pointer;
+			}
+
+			.removeFileBtn {
+				cursor: pointer;
+			}
+		}
+	}
+}

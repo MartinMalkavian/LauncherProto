@@ -1,0 +1,34 @@
+@import "assets/css/constants.scss";
+@import "./accountList.scss";
+@import "./accountAdd.scss";
+
+.LoginBlock {
+	width: 310px;
+	height: 100%;
+
+	.header {
+		height: 90px;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+		flex-direction: row;
+	}
+
+	.body {
+		height: 550px;
+
+		@extend %accountListBlock;
+		@extend %accountAddBlock;
+	}
+
+	.footer {
+		height: 60px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+@import "assets/css/constants.scss";
+@import "./account.scss";
+
+%accountListBlock {
+	.accountListBlock {
+		.addAccountBtn {
+			height: 90px;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			color: $grey600;
+
+			padding-top: 30px;
+			box-sizing: border-box;
+
+			transition: color 0.25s ease;
+
+			svg {
+				margin-left: 20px;
+			}
+
+			&:hover {
+				color: $grey100;
+				cursor: pointer;
+			}
+		}
+
+		.accountList {
+			height: 450px;
+			overflow-y: auto;
+			margin: 0 8px;
+			padding: 0 8px;
+
+			@extend %account;
+		}
+	}
+}

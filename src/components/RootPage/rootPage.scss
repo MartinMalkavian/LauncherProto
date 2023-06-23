@@ -1,0 +1,51 @@
+@import "assets/css/constants.scss";
+
+section {
+	position: absolute;
+	&#Left {
+		width: 310px;
+		height: 700px;
+		top: 0;
+		left: 0;
+	}
+
+	&#SysBtns {
+		width: 890px;
+		height: 30px;
+		top: 0;
+		right: 0;
+	}
+
+	&#MenuTabs {
+		width: 890px;
+		height: 60px;
+		top: 30px;
+		right: 0;
+	}
+
+	&#Outlet {
+		width: 890px;
+		height: 610px;
+		bottom: 0;
+		right: 0;
+		padding: 20px 15px;
+		border-top: 1px solid $grey900;
+		border-left: 1px solid $grey900;
+		overflow-y: auto;
+		flex-direction: column;
+	}
+
+	&#MessageModal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background: rgba($color: #000000, $alpha: 0.25);
+	}
+}

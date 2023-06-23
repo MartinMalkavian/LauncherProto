@@ -1,0 +1,91 @@
+@import "assets/css/constants.scss";
+
+.optionsBlock {
+	margin: 30px 25px;
+
+	.body {
+		height: 420px;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 59px;
+
+		.VideoBlock {
+			width: 275px;
+
+			.video {
+				margin-bottom: 45px;
+
+				.content {
+					color: $grey600;
+				}
+
+				.title {
+					align-items: center;
+					padding-left: 10px;
+				}
+			}
+		}
+
+		.OtherBlock {
+			width: 165px;
+
+			.langSwitch {
+				width: inherit;
+				height: 30px;
+				background: url("../images/locals.png") center no-repeat;
+				background-position: -165px 0px;
+				cursor: pointer;
+				margin: 0 0 10px;
+				transition: background 0.5s ease;
+			}
+
+			.checkboxBlock {
+				flex-direction: row;
+				align-items: center;
+				font-size: 1.4rem;
+				margin: 11px 0;
+
+				.checkbox {
+					width: 15px;
+					height: 15px;
+					box-sizing: border-box;
+					border: 2px solid;
+					border-color: $grey100;
+					cursor: pointer;
+					position: relative;
+
+					svg {
+						position: absolute;
+						left: 1px;
+						color: $orange;
+					}
+
+					&.checked {
+						border-color: $orange;
+					}
+				}
+
+				.label {
+					margin-left: 10px;
+					cursor: pointer;
+				}
+			}
+
+			.content {
+				color: $grey600;
+				margin: 10px 0;
+			}
+		}
+	}
+
+	.footer {
+		flex-direction: row;
+		justify-content: center;
+
+		.cancel,
+		.save {
+			margin: 0 13px;
+			justify-content: center;
+		}
+	}
+}

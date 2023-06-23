@@ -1,0 +1,84 @@
+@import "assets/css/commonIcon.scss";
+
+.blow {
+	width: 25px;
+	height: 43px;
+	position: absolute;
+
+	background: url("images/blow.png") no-repeat;
+
+	animation: blow 3s linear infinite;
+}
+
+.leftFork {
+	width: 44px;
+	height: 20px;
+	position: absolute;
+	left: -3px;
+	top: 29px;
+	background: url("images/forkLeft.png") no-repeat;
+	background-size: 33px;
+
+	animation: leftFork 3s linear infinite;
+}
+
+.rightFork {
+	width: 44px;
+	height: 20px;
+	position: absolute;
+	right: -7px;
+	top: 22px;
+	background: url("images/forkRight.png") no-repeat bottom left;
+	background-size: 43px;
+
+	animation: rightFork 3s linear infinite;
+}
+
+@keyframes blow {
+	40% {
+		width: 25px;
+		height: 43px;
+		background-size: 100%;
+		opacity: 1;
+	}
+	50% {
+		width: 16.75px;
+		height: 28.81px;
+		background-size: 67%;
+		opacity: 0.5;
+	}
+	60% {
+		width: 25px;
+		height: 43px;
+		background-size: 100%;
+		opacity: 1;
+	}
+}
+
+@keyframes leftFork {
+	40% {
+		left: -3px;
+	}
+
+	50% {
+		left: 2px;
+	}
+
+	60% {
+		left: -3px;
+	}
+}
+
+@keyframes rightFork {
+	40% {
+		right: -7px;
+	}
+
+	50% {
+		right: -2px;
+	}
+
+	60% {
+		right: -7px;
+	}
+}

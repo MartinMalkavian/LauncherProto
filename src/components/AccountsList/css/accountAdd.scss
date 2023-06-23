@@ -1,0 +1,45 @@
+@import "assets/css/constants.scss";
+@import "assets/css/templates.scss";
+
+%accountAddBlock {
+	.accountAddBlock {
+		align-items: stretch;
+		padding: 0 30px;
+		color: $grey100;
+		flex-direction: column;
+		height: 550px;
+
+		.titleText {
+			margin: 100px auto 0;
+		}
+
+		.inputBlock {
+			margin-top: 60px;
+			flex-direction: row;
+
+			border-bottom: 1px solid $grey600;
+			justify-content: space-between;
+			align-items: center;
+
+			@extend %tpl-inputLabel;
+
+			& > input {
+				width: 90%;
+				height: 35px;
+				color: $grey100;
+				background-color: transparent;
+				outline: none;
+				border: none;
+			}
+			&.focused {
+				color: $orange;
+				border-bottom: 1px solid $orange;
+			}
+		}
+
+		.errorBlock {
+			min-height: 50px;
+			color: #bf3030;
+		}
+	}
+}

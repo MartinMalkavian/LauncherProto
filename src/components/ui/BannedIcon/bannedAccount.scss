@@ -1,0 +1,43 @@
+@import "assets/css/commonIcon.scss";
+
+.bannedIcon {
+	width: 50px;
+	height: 49px;
+	animation: bannedAlert 2.5s linear infinite;
+}
+
+@keyframes bannedAlert {
+	0% {
+		background: url("images/banned.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	10% {
+		background: url("images/banned2.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	20% {
+		background: url("images/banned.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	30% {
+		background: url("images/banned2.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	40% {
+		background: url("images/banned.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	50% {
+		background: url("images/banned2.png") no-repeat center;
+		transition: background 0.1s linear;
+	}
+
+	100% {
+		background: url("images/banned2.png") no-repeat center;
+	}
+}

@@ -1,0 +1,98 @@
+@import "assets/css/constants.scss";
+
+div#Options {
+	flex-direction: column;
+	margin: 30px 25px;
+
+	#OptionsBlock {
+		height: 420px;
+		justify-content: space-between;
+		margin-bottom: 59px;
+	}
+
+	.VideoBlock {
+		width: 275px;
+		flex-direction: column;
+
+		.video {
+			margin-bottom: 45px;
+			flex-direction: column;
+
+			.content {
+				color: $grey600;
+			}
+
+			.title {
+				align-items: center;
+				padding-left: 10px;
+			}
+		}
+	}
+
+	.SlidersBlock {
+		flex-direction: column;
+	}
+
+	.OtherBlock {
+		flex-direction: column;
+		display: flex;
+		width: 165px;
+		flex-direction: column;
+
+		.langSwitch {
+			width: inherit;
+			height: 30px;
+			background: url("./images/locals.png") center no-repeat;
+			background-position: -165px 0px;
+			cursor: pointer;
+			margin: 0 0 10px;
+			transition: background 0.5s ease;
+		}
+
+		.checkboxBlock {
+			display: flex;
+			align-items: center;
+			font-size: 1.4rem;
+			margin: 11px 0;
+
+			.checkbox {
+				width: 15px;
+				height: 15px;
+				box-sizing: border-box;
+				border: 2px solid;
+				border-color: $grey100;
+				cursor: pointer;
+				position: relative;
+
+				svg {
+					position: absolute;
+					left: 1px;
+					color: $orange;
+				}
+
+				&.checked {
+					border-color: $orange;
+				}
+			}
+
+			.label {
+				margin-left: 10px;
+				cursor: pointer;
+			}
+		}
+
+		.content {
+			color: $grey600;
+			margin: 10px 0;
+		}
+	}
+}
+
+div#optionsBtns {
+	justify-content: center;
+
+	.cancel,
+	.save {
+		margin: 0 13px;
+	}
+}

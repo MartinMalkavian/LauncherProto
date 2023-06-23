@@ -1,0 +1,36 @@
+@import "assets/css/constants.scss";
+
+.SystemBtnsBlock {
+	width: 100%;
+	height: inherit;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	.minimizeBtn,
+	.closeBtn {
+		// width: 40px;
+		height: 20px;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		color: $grey600;
+
+		&:hover {
+			color: $grey100;
+		}
+	}
+
+	.minimizeBtn {
+		width: 30px;
+		&:hover {
+			background-color: $azure;
+		}
+	}
+
+	.closeBtn {
+		width: 40px;
+		&:hover {
+			background-color: $red;
+		}
+	}
+}

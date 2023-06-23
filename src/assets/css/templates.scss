@@ -1,0 +1,29 @@
+@import "./constants.scss";
+
+$inputLabelAniSpd: 0.2s;
+
+%tpl-inputLabel {
+	.inputTitle {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+
+		justify-content: center;
+
+		color: $grey600;
+
+		cursor: pointer;
+
+		transition: font-size $inputLabelAniSpd ease, color $inputLabelAniSpd ease,
+			height $inputLabelAniSpd ease, top $inputLabelAniSpd ease;
+
+		&.small {
+			font-size: 1.2rem;
+			color: $orange;
+			height: 13px;
+			top: -13px;
+		}
+	}
+}
